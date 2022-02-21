@@ -1,2 +1,2 @@
 # sustain
-🎩 sustainability in grop management
+🎩 sustainability in cropmanagement
