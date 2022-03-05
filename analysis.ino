@@ -34,9 +34,6 @@ void loop() {
   delay(500);
   digitalWrite(blinker, LOW);
   delay(500);
-
-
-  Serial.println("=================================");
   
   byte temperature = 0;
   byte humidity = 0;
@@ -56,17 +53,15 @@ void loop() {
 
   float d = (a/1000)*100;
   Serial.print("Moisture (%) "); Serial.println(d);
-
   
   Serial.println(a+b+c);
 
-
-  if (humidity == 60) {
+  if (humidity == 50) {
     digitalWrite(led12, HIGH);
     digitalWrite(led11, HIGH);
     digitalWrite(led10, HIGH);
     digitalWrite(led9, HIGH);
-  } else if (40 <= humidity <= 60) {
+  } else if (40 <= humidity <= 50) {
     digitalWrite(led12, HIGH);
     digitalWrite(led11, HIGH);
     digitalWrite(led10, HIGH);
